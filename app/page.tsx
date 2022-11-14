@@ -1,11 +1,17 @@
-import React from 'react';
-import Header from './header';
+'use client';
+
+import React, { useState } from 'react';
+import { AnimatePresence} from 'framer-motion';
+import Landing from './landing';
 
 export default function Home() {
+  const [isResume, setIsResume] = useState<boolean>(false);
+
   return (
-    <div className='mainContainer'>
-      <Header />
-      <div className='nameTitle'>Noah Otsuka</div>
-    </div>
+    <AnimatePresence mode="wait">
+      <div className='mainContainer'>
+        <Landing key="Landing" setIsResume={() => null} />
+      </div>
+    </AnimatePresence>
   );
 }

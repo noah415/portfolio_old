@@ -4,12 +4,30 @@
 
 @layer components {
   .mainContainer {
-    @apply bg-slate-800 w-screen h-screen pt-10 px-10;
+    @apply bg-slate-800 w-screen h-screen overflow-y-visible overflow-x-hidden pt-10 px-10;
   }
   .nameTitle {
-    @apply text-white font-bold text-8xl delay-200 hover:text-[100px] duration-500 m-auto w-max justify-self-center pt-20;
+    @apply text-white font-bold text-8xl delay-200 hover:text-[100px] duration-500 m-auto w-max pt-32;
+  }
+  .jobTitle {
+    @apply text-gray-400 font-bold text-7xl delay-200 hover:text-[73px] duration-500 m-auto w-max pt-10;
   }
   .btn-outlined {
-    @apply border-gray-400 rounded-lg border px-12 py-2 hover:bg-gray-400 hover:text-white hover:text-[20px] duration-500;
+    @apply border-gray-400 h-min rounded-lg border px-12 py-2 hover:bg-gray-400 hover:text-white hover:text-[20px] duration-500;
+  }
+  .card-outlined {
+    @apply border-gray-400 h-min w-6/12 rounded-lg border p-5 m-auto mt-20 text-2xl text-gray-400 text-center;
+  }
+  .resumeCategory {
+    @apply text-gray-400 text-4xl pt-28;
+  }
+  .resumeSubCategory {
+    @apply text-gray-400 text-2xl pt-4;
+  }
+  .resumeList {
+    @apply text-white pl-6 font-semibold;
+  }
+  .resumeItem {
+    @apply pt-2;
   }
 }

@@ -1,11 +1,9 @@
-'use client';
-
-import { motion } from 'framer-motion';
 import React from 'react';
+import { motion } from 'framer-motion';
 
-export default function ResumePage() {
+export default function ResumeContent() {
   return (
-    <div className="mainContainer">
+    <div className="">
       <motion.div 
           key="resume button"
           className="text-white text-7xl pl-2 rounded-2xl" 
